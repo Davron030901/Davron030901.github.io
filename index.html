@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Davron Aliqulov — AI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo">DA<span class="dot">.</span></span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg">
+      <canvas id="neural-canvas"></canvas>
+    </div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="blink-dot"></span>
+        Available for opportunities
+      </div>
+      <h1 class="hero-name">Davron<br><span class="accent">Aliqulov</span></h1>
+      <p class="hero-title">AI Engineer<span class="pipe">|</span>Machine Learning<span class="pipe">|</span>Computer Vision</p>
+      <p class="hero-desc">
+        Building intelligent systems at the intersection of deep learning, NLP, and real-world AI pipelines.
+        Based in Tashkent, Uzbekistan.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-outline">Get in Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">6+</span>
+          <span class="stat-label">ML Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">3</span>
+          <span class="stat-label">Companies</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">39</span>
+          <span class="stat-label">GitHub Repos</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-label">01 — About</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-title">Turning data into<br><em>intelligent systems</em></h2>
+          <p>
+            I'm an AI Engineer with hands-on experience in machine learning, deep learning, and computer vision.
+            I design and deploy end-to-end AI pipelines — from raw data preprocessing and model training
+            to API integration and production deployment.
+          </p>
+          <p>
+            My background in Physical Engineering gives me a strong mathematical foundation,
+            which I combine with practical skills in NLP, generative AI, LLM APIs,
+            and agentic frameworks like MCP and Claude Code.
+          </p>
+          <p>
+            Currently exploring the frontier of LLM-powered systems, vector search,
+            and on-prem AI deployment with vLLM and LiteLLM.
+          </p>
+          <div class="about-tags">
+            <span class="tag">Python</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">OpenCV</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">YOLO</span>
+            <span class="tag">Hugging Face</span>
+            <span class="tag">Qdrant</span>
+            <span class="tag">LLM APIs</span>
+          </div>
+        </div>
+        <div class="about-card">
+          <div class="about-card-inner">
+            <div class="card-avatar">
+              <div class="avatar-circle">
+                <span>DA</span>
+              </div>
+              <div class="avatar-ring"></div>
+            </div>
+            <div class="card-info">
+              <div class="card-row">
+                <span class="card-icon">📍</span>
+                <span>Tashkent, Uzbekistan</span>
+              </div>
+              <div class="card-row">
+                <span class="card-icon">🎓</span>
+                <span>PDP University — AI</span>
+              </div>
+              <div class="card-row">
+                <span class="card-icon">💼</span>
+                <span>Open to full-time & freelance</span>
+              </div>
+              <div class="card-row">
+                <span class="card-icon">🌐</span>
+                <span>Uzbek · English (B1)</span>
+              </div>
+            </div>
+            <a href="https://github.com/Davron030901" target="_blank" class="card-github">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              github.com/Davron030901
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-label">02 — Skills</div>
+      <h2 class="section-title">Technical<br><em>Expertise</em></h2>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-icon">🧠</div>
+          <h3>AI / ML</h3>
+          <ul>
+            <li>PyTorch, TensorFlow / Keras</li>
+            <li>Scikit-learn, XGBoost</li>
+            <li>Deep Learning, Transfer Learning</li>
+            <li>Ensemble Methods</li>
+            <li>Model Training & Evaluation</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">👁️</div>
+          <h3>Computer Vision</h3>
+          <ul>
+            <li>OpenCV, YOLO (v5/v8)</li>
+            <li>CNN Architectures</li>
+            <li>Tesseract OCR</li>
+            <li>Image Segmentation</li>
+            <li>Bounding Boxes, Video Annotation</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">💬</div>
+          <h3>NLP & LLMs</h3>
+          <ul>
+            <li>Hugging Face Transformers</li>
+            <li>NLTK, spaCy</li>
+            <li>OpenAI, Anthropic (Claude), Gemini</li>
+            <li>vLLM + LiteLLM (on-prem)</li>
+            <li>Prompt Engineering</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🔍</div>
+          <h3>Retrieval & Search</h3>
+          <ul>
+            <li>Qdrant vector database</li>
+            <li>Vector / Hybrid Search</li>
+            <li>Embeddings (Qwen3, Sentence Transformers)</li>
+            <li>RAG pipelines</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">⚙️</div>
+          <h3>Agentic AI</h3>
+          <ul>
+            <li>MCP (Model Context Protocol)</li>
+            <li>Claude Code</li>
+            <li>AI Pipeline Design</li>
+            <li>LLM API Integration</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🛠️</div>
+          <h3>Backend & Data</h3>
+          <ul>
+            <li>FastAPI, Django</li>
+            <li>Pandas, NumPy, EDA</li>
+            <li>Matplotlib, Seaborn</li>
+            <li>Git, GitHub, Jupyter</li>
+            <li>Google Colab, VS Code</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-label">03 — Experience</div>
+      <h2 class="section-title">Work<br><em>History</em></h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>AI Data Annotator & Quality Assessor</h3>
+                <span class="company">Yandex / Lavoro Solutions</span>
+              </div>
+              <span class="period">Jan 2025 — present</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Annotated and reviewed training data for production ML/AI models, maintaining accuracy above 98%</li>
+              <li>Quality assessment on NLP and computer vision model outputs; identified systematic errors and edge cases</li>
+              <li>Contributed to iterative model improvement cycles with structured performance feedback</li>
+              <li>Hands-on image annotation: Bounding Boxes, Image Segmentation, video annotation</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Computer Vision</span><span>NLP</span><span>Data Annotation</span><span>Quality Assurance</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Python Backend Developer</h3>
+                <span class="company">ABS Vision · Tashkent</span>
+              </div>
+              <span class="period">Aug 2025 — Oct 2025</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Developed backend services in Python for a computer vision system</li>
+              <li>Designed and implemented RESTful APIs using FastAPI</li>
+              <li>Integrated YOLO and OpenCV models with the backend layer for video stream processing</li>
+              <li>Participated in service performance optimization and database management</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Python</span><span>FastAPI</span><span>YOLO</span><span>OpenCV</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Python Backend Developer</h3>
+                <span class="company">Nextin Web Studio · Tashkent</span>
+              </div>
+              <span class="period">Mar 2026</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Developed and maintained backend logic for web applications using Python and FastAPI</li>
+              <li>Implemented API endpoints and collaborated with the frontend team on integration</li>
+              <li>Worked with databases and optimized queries for improved performance</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Python</span><span>FastAPI</span><span>REST API</span><span>Databases</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Education -->
+      <div class="edu-grid">
+        <div class="edu-card">
+          <div class="edu-icon">🎓</div>
+          <div>
+            <h4>AI Solutions & Applications</h4>
+            <span class="edu-school">PDP University</span>
+            <span class="edu-year">2023 — 2025</span>
+          </div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon">⚗️</div>
+          <div>
+            <h4>B.Sc. Physical Engineering</h4>
+            <span class="edu-school">Karshi State University</span>
+            <span class="edu-year">2019 — 2023</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-label">04 — Projects</div>
+      <h2 class="section-title">Featured<br><em>Work</em></h2>
+      <div class="projects-grid">
+
+        <div class="project-card featured">
+          <div class="project-badge">Computer Vision</div>
+          <h3>Passport Data Extraction System</h3>
+          <p>Automated OCR pipeline to extract PINFL and serial numbers from scanned passports. Includes image preprocessing (binarization, noise removal) and custom Tesseract post-processing logic.</p>
+          <div class="project-stack">
+            <span>Python</span><span>OpenCV</span><span>Tesseract OCR</span><span>NumPy</span>
+          </div>
+          <a href="https://github.com/Davron030901" target="_blank" class="project-link">
+            View on GitHub →
+          </a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-badge">Deep Learning</div>
+          <h3>Malaria Cell Classification</h3>
+          <p>CNN model for classifying microscopic blood cell images using the NIH Malaria dataset. Data augmentation and thorough evaluation with ROC-AUC and confusion matrix.</p>
+          <div class="project-stack">
+            <span>TensorFlow/Keras</span><span>OpenCV</span><span>Scikit-learn</span>
+          </div>
+          <a href="https://github.com/Davron030901" target="_blank" class="project-link">View on GitHub →</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-badge">NLP</div>
+          <h3>BBC News Classifier</h3>
+          <p>Multi-class NLP classifier for news articles across 5 categories. TF-IDF features with SVM, Naive Bayes, Logistic Regression — achieving over 95% accuracy.</p>
+          <div class="project-stack">
+            <span>Python</span><span>NLTK</span><span>Scikit-learn</span><span>Pandas</span>
+          </div>
+          <a href="https://github.com/Davron030901/Machine_Learning" target="_blank" class="project-link">View on GitHub →</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-badge">Machine Learning</div>
+          <h3>Heart Failure Prediction</h3>
+          <p>Binary classification on clinical records with 13 medical attributes. Random Forest + XGBoost comparison via cross-validation. Achieved F1-score of 0.87.</p>
+          <div class="project-stack">
+            <span>Python</span><span>XGBoost</span><span>Scikit-learn</span><span>Seaborn</span>
+          </div>
+          <a href="https://github.com/Davron030901/Machine_Learning" target="_blank" class="project-link">View on GitHub →</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-badge">Recommender System</div>
+          <h3>Movie Recommendation Engine</h3>
+          <p>Hybrid recommender combining collaborative filtering (cosine similarity on user-rating matrices) and content-based filtering (TF-IDF on movie metadata).</p>
+          <div class="project-stack">
+            <span>Python</span><span>Pandas</span><span>Scikit-learn</span><span>NumPy</span>
+          </div>
+          <a href="https://github.com/Davron030901/Machine_Learning" target="_blank" class="project-link">View on GitHub →</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-badge">Data Science</div>
+          <h3>Flight Delay Analysis</h3>
+          <p>End-to-end data science project on 5M+ US flight records. EDA to identify key delay factors (carrier, weather, route), predictive model, Seaborn dashboards.</p>
+          <div class="project-stack">
+            <span>Python</span><span>Pandas</span><span>Matplotlib</span><span>Seaborn</span>
+          </div>
+          <a href="https://github.com/Davron030901/Machine_Learning" target="_blank" class="project-link">View on GitHub →</a>
+        </div>
+
+      </div>
+      <div class="projects-more">
+        <a href="https://github.com/Davron030901?tab=repositories" target="_blank" class="btn-outline">
+          See all 39 repositories on GitHub →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-label">05 — Contact</div>
+      <div class="contact-inner">
+        <h2 class="section-title">Let's build<br><em>something together</em></h2>
+        <p class="contact-desc">
+          Open to AI engineering roles, ML freelance projects, and research collaborations.
+          I respond to all messages within 24 hours.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:davronaliqulov81@gmail.com" class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <span class="contact-label">Email</span>
+              <span class="contact-value">davronaliqulov81@gmail.com</span>
+            </div>
+          </a>
+          <a href="https://github.com/Davron030901" target="_blank" class="contact-item">
+            <div class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </div>
+            <div>
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">github.com/Davron030901</span>
+            </div>
+          </a>
+          <a href="tel:+998903422001" class="contact-item">
+            <div class="contact-icon">📱</div>
+            <div>
+              <span class="contact-label">Phone / Telegram</span>
+              <span class="contact-value">+998 90 342 20 01</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <span>© 2026 Davron Aliqulov</span>
+      <span>Built with HTML · CSS · JS · Hosted on GitHub Pages</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
